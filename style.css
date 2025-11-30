@@ -45,6 +45,39 @@ nav a.active {
   color: #38bdf8;
 }
 
+/* ------------------------ */
+/*     MY WORKS BUTTON      */
+/* ------------------------ */
+.my-works-button {
+  margin-left: 20px;
+}
+
+.my-works-button a {
+  text-decoration: none;
+}
+
+.my-works-button button {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.my-works-button button i {
+  margin-left: 8px;
+}
+
+.my-works-button button:hover {
+  background: #0ea5e9;
+}
+
 /* Sections */
 section {
   padding: 100px 80px;
@@ -72,7 +105,7 @@ section {
   color: #cbd5e1;
 }
 
-#skills, #experience, #contact {
+#skills, #experience, #contact, #works {
   max-width: 900px;
   margin: 0 auto;
 }
@@ -112,6 +145,15 @@ h2.section-title {
 
 .experience-item h3 {
   color: #38bdf8;
+}
+
+.experience-item h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.experience-item h3 a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -169,6 +211,7 @@ footer {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
+    gap: 15px;
   }
 
   section {
@@ -178,4 +221,32 @@ footer {
   .skills-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .my-works-button {
+    margin-left: 0;
+  }
+}
+/* Modern Back to Top Button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  padding: 15px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#scrollTopBtn:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
 }
